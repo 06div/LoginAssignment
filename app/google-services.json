@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293853720206",
+    "project_id": "login-assignment-4fb98",
+    "storage_bucket": "login-assignment-4fb98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293853720206:android:1d8f41279b15ece68c23df",
+        "android_client_info": {
+          "package_name": "com.example.login_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3TulRzFC0Vr0mxuV6Sp3YASX-UNFX1t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login_Assignment</string>
+
+    <string name="login_page">Login Page</string>
+    <string name="Login">LogIn</string>
+    <string name="User_Name">User Name :</string>
+    <string name="Password">Password :</string>
+    <string name="userName">Enter User Name</string>
+    <string name="pswd">Enter Password</string>
+
+    <string name="signup_page">SignUp Page</string>
+    <string name="confirm_pswd">Confirm Password :</string>
+    <string name="confirmpswd">Re-Enter Password</string>
+    <string name="signup">SignUp</string>
+
+    <string name="data">Get Data</string>
+    <string name="fetchdata">fetch_data</string>
+</resources>
