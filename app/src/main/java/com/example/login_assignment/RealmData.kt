@@ -8,7 +8,7 @@ import io.realm.annotations.RealmClass
 
 @RealmClass
 open class RealmData(@PrimaryKey
-                     var id:Int = 0,
+                     var id: Int = 0,
                      var name:String = "",
                      var age:Int = 0,
                      var city:String = "") : RealmObject(){

@@ -46,14 +46,21 @@ class UserData : AppCompatActivity() {
 
         val realm = Realm.getInstance(config)
 
-        val persons = listOf(
-            RealmData(name = "John", age = 30, city = "New York"),
+        val person1 =  RealmData(id = 1, name =  "Sanj", age = 25, city = "Delhi")
+        val person2 = RealmData(id = 2, name = "Manvi", age = 30, city = "Pune")
+        val person3 = RealmData(id = 3,name = "Aakash", age = 27, city = "Bhopal")
+
+        val personsToAdd = listOf(
+            person1, person2, person3
 
         )
 
         realm.executeTransaction { realmInstance ->
-            realmInstance.insertOrUpdate(persons)
+            for (person in personsToAdd) {
+                realmInstance.insertOrUpdate(person)
+            }
         }
+
 
 
         val da = realm.where(RealmData::class.java).findAll()
@@ -86,22 +93,22 @@ class UserData : AppCompatActivity() {
         }
 
         //used for adding more data to database on a unique primaryKey number manually
-
+//
 //        realm.beginTransaction()
 //
-//        var data = realm.createObject(RealmData::class.java,7) //primary key is already exit so when ever execute this code with the same user(database) then change its number or comment it if don't want to use it
+//        var data = realm.createObject(RealmData::class.java,1) //primary key is already exit so when ever execute this code with the same user(database) then change its number or comment it if don't want to use it
 ////        data.name = "John"
 ////        data.age = 25
 ////        data.city = "Pune"
 ////        data.name = "Sanya"
 ////        data.age = 18
 ////        data.city = "Bhopal"
-//        data.name = "Sanj"
-//        data.age = 29
+//        data.name = "kanha"
+//        data.age = 19
 //        data.city = "Delhi"
-
-//        realm.commitTransaction()
 //
+//        realm.commitTransaction()
+////
 
 
         // -------------------------
